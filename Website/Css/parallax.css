@@ -1,0 +1,75 @@
+title {
+    text-shadow: 0 0 5px black;
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: white;
+    display: inline;
+    text-align: center;
+}
+
+.parallax_wrapper {
+    /* position: relative; */
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 20px;
+}
+
+/* Perspective means, we're viewing the 
+webpage at a distance of 20px in front of the y-z
+plane */
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: -1;
+    /* setting the z-index to -1 so it 
+    appears behind the section of text */
+    transform-style:preserve-3d;
+}
+
+#background, #earth, #moon, #mars {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+    z-index: -1;
+    
+    /* setting z-index to -1 to make the title
+    appear in front ie, make this appear
+    
+    behind the title*/
+}
+
+#background {
+    transform: translateZ(-20px) scale(2);
+    
+}
+
+/* translateZ pushes the background back
+by another 20 pixels, so it's twice as far
+from us as it is from the screen, hence we scale it
+by 2 */
+
+/* ie. 40 px from screen = x2 scale
+       20 px from screen = x1 scale
+
+       35 px from screen = x(35/20) scale
+       ...
+*/
+
+#mars {
+    transform: translateZ(-15px) scale(1.75);
+}
+
+#moon {
+    transform: translateZ(-10px) scale(1.50);
+}
+
+#earth {
+    transform: translateZ(-5px) scale(1.25);
+}
+

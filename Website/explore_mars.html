@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css\styles.css">
+    <link rel="stylesheet" href="Css\cards.css">
+    <link rel="stylesheet" href="Css\explore_mars.css">
+    <link rel="stylesheet" href="Css/anim.css">
+    <script defer src="Javascript/anim.js"></script>
+    <script defer src="Javascript/audio.js"></script>
+    <title>LIMITLESS - Explore Mars</title>
+</head>
+<body>
+    <nav>
+        <div class="navitem" id="home"><a href="index.html">Home</a></div>
+        <div class="navitem"><a href="apod.html">Astronomical Picture of the Day</a></div>
+        <div class="navitem"><a href="explore_mars.html">Explore Mars</a></div>
+        <div class="navitem"><a href="exoplanets.html">Exoplanets</a></div>
+        <div class="navitem"><a href="blackholes.html">Blackholes</a></div>
+    </nav>
+    <div class="text_and_slideshow">
+        <div class="textblock">
+            
+            <img src="Images/curiosity_rover.png" alt="curiosity_rover" class="hidden1">
+            <div class="textbox">
+                
+                <h1 class="hidden3">Curiosity Rover</h1>
+                <h4 class="hidden2">Curiosity is a car-sized Mars rover designed to explore the Gale crater on Mars as part of NASA's Mars Science Laboratory mission. Curiosity was launched from Cape Canaveral on 26 November 2011 and landed on Mars on 6 August 2012. On 6 August 2022, a detailed overview of accomplishments by the Curiosity rover for the last ten years was reported.  The rover is still operational, and as of These Day, Curiosity has been active on Mars for 10 years since its landing.</h4>
+                <strong style="display: block; text-align: center;" class="hidden2">These images were taken by the rover on <span id="photo_date_element"></span></strong>
+                
+            </div>
+        </div>
+        <div class="slideshow_wrapper">
+            <div id="curiosity" class="slideshow"></div>
+        </div>
+    </div>
+    <script src="Javascript\mars_rover_api.js"></script>
+    <script src="Javascript\iterate_slides.js"></script>
+</body>
+</html>

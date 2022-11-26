@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css\styles.css">
+    <link rel="stylesheet" href="Css\cards.css">
+    <link rel="stylesheet" href="Css/anim.css">
+    <script defer src="Javascript/anim.js"></script>
+    <script defer src="Javascript/audio.js"></script>
+    <title>LIMITLESS - Exoplanets</title>
+</head>
+<body>
+    <nav>
+        <div class="navitem" id="home"><a href="index.html">Home</a></div>
+        <div class="navitem"><a href="apod.html">Astronomical Picture of the Day</a></div>
+        <div class="navitem"><a href="explore_mars.html">Explore Mars</a></div>
+        <div class="navitem"><a href="exoplanets.html">Exoplanets</a></div>
+        <div class="navitem"><a href="blackholes.html">Blackholes</a></div>
+    </nav>
+    <section >
+        <p class="hidden">
+        <strong>Exoplanets</strong> are planets that exist beyond our own solar system. Most exoplanets orbit other stars but some, called "Rogue Planets", orbit the center of the galaxy of which they're a part and do not orbit any star.
+        <br>
+        <br>
+        They are fascinating for several reasons!
+        There are some exoplanets that are similar to earth
+        and could even host extraterrestrial life, some that
+        have glass rain, and even some whoose surface is covered
+        in molten lava. The possibilities are endless. (Hover over the images to read more about them)
+        </h3>
+        </p>
+    </section>
+    <div class="cardgrid">
+        <div class="card hidden">
+           
+			<a href="https://exoplanets.nasa.gov/exoplanet-catalog/5471/kepler-452-b/" target="_blank" onclick="audio.play();">
+                <img src="Images\kepler452b-earthlike.jpeg" alt="rocky exoplanet similar to the earth" class="cardimg">
+            </a>
+            
+            <div class="cardinfo">
+                <div class="cardtitle">Kepler-453b</div>
+                <div class="cardcaption">This planet is an earth-like rocky planet orbiting a star similar to the sun within the star's habitable zone. It is commonly called Earth 2.0</div>
+            </div>
+        </div>
+        <div class="card hidden">
+			<a href="https://exoplanets.nasa.gov/exoplanet-catalog/1242/corot-7-b/" target="_blank" onclick="audio.play();">
+				<img src="Images\corot-7b.jpeg" alt="planet with molten lava surface" class="cardimg">
+            </a>
+            <div class="cardinfo">
+                <div class="cardtitle">Corot-7b</div>
+                <div class="cardcaption">A planet that orbits so close to a star, that its surface is covered in molten lava, while having high geographical activity due to the strong gravitational forces on it.</div>
+            </div>
+        </div>
+        <div class="card hidden1">
+			<a href="https://exoplanets.nasa.gov/exoplanet-catalog/6876/hd-189733-b/" target="_blank" onclick="audio.play();">
+				<img src="Images\glass_rain_planet.jpeg" alt="deep blue colored planet with glass rain" class="cardimg">
+            </a>
+            <div class="cardinfo">
+                <div class="cardtitle">HD 189733 b</div>
+                <div class="cardcaption">A hot deep blue planet about 65 light-years away with molten glass rain. It was also the first planet to have its thermal map constructed.</div>              
+            </div>
+        </div>
+        <div class="card hidden1">
+			<a href="https://exoplanets.nasa.gov/exoplanet-catalog/7137/psr-b1620-26-b/" target="_blank" onclick="audio.play();">
+				<img src="Images\PSR-B1620-26-b.jpeg" alt="oldest known exoplanet orbiting two stars" class="cardimg">
+            </a>
+            <div class="cardinfo">
+                <div class="cardtitle">PSR B1620-26 b</div>
+                <div class="cardcaption">The oldest known exoplanet with an estimated age of 12.7 billion, It is also the first ever planet to be confirmed to orbit two stars!</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <section class="cardandtext right">
+        <p class="hidden">
+            Exoplanets have become an important area of 
+            astrophysics in the last two decades. 
+            Important methods used
+            to detect exoplanets are direct imaging, 
+            astrometry, radial velocity, transit event 
+            observation, and microlensing.
+
+            Scientists are actively working on the project Breakthrough Starshot, which aims to engineer
+            centimeter-sized sails that are capable of travelling at 20% the speed of light to travel to distant solar systems and communicate data back to us on earth.</div>
+        </p>
+        
+        <div class="card hidden1">
+            <a href="https://exoplanets.nasa.gov/exoplanet-catalog/7167/proxima-centauri-b/" target="_blank" onclick="audio.play();">
+				<img src="Images\proxima-centauri-b-alpha-centauri-cb.jpeg" alt="relatively close exoplanet" class="cardimg">
+            </a>
+            <div class="cardinfo">
+                <div class="cardtitle">Alpha Centauri Cb</div>
+                <div class="cardcaption">This is an earth-like planet which orbits Proxima Centauri b, a star only 4 light years away. In the future we could explore it using a light sail called <i>starchip</i></div>
+            </div>
+        </div>
+       
+    </section>
+    <footer>
+        Created by Krist and Nevan
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css\styles.css">
+    <link rel="stylesheet" href="Css\cards.css">
+    <title>LIMITLESS - APOD</title>
+</head>
+<body>
+    <nav>
+        <div class="navitem" id="home"><a href="index.html">Home</a></div>
+        <div class="navitem"><a href="apod.html">Astronomical Picture of the Day</a></div>
+        <div class="navitem"><a href="explore_mars.html">Explore Mars</a></div>
+        <div class="navitem"><a href="exoplanets.html">Exoplanets</a></div>
+        <div class="navitem"><a href="blackholes.html">Blackholes</a></div>
+    </nav>
+    <section>
+        <div class="card" style="height: 80vh; margin: auto">
+            <img src="" alt="Today's Astronomical Picture of the Day" class="cardimg" id="apod_image">
+            <div class="cardinfo">
+                <div class="cardtitle" id="apod_caption">APOD</div>
+                <div class="cardcaption" id="apod_explanation">Explanation</div>
+            </div>
+        </div>
+    </section>
+    <script src="Javascript\apod_api.js"></script>
+</body>
+</html>

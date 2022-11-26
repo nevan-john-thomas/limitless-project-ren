@@ -1,0 +1,97 @@
+:root {
+    /* --card_width: 27%; */
+    --card_transition_duration: 0.7s;
+    
+    overflow-x: hidden;
+}
+
+.cardgrid {
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.cardandtext {
+    /* Overwritting the padding fron styles.css */
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+    height: 40vh;
+}
+
+.right {
+    padding-right: 1rem;
+}
+
+.left {
+    padding-left: 1rem;
+}
+
+.cardandtext>.card, .cardandtext>p{
+    width: 50%;
+}
+
+.card {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px 2px gray;
+    border-radius: 5px;
+    height: 100%;
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card:hover .cardimg {
+    cursor: pointer;    
+    transform: scale(1.1);
+}
+
+.card:hover .cardcaption {
+    opacity: 1;
+    height: auto;
+}
+
+.cardinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.55rem;
+}
+
+.cardtitle {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cardcaption {
+    text-align: center;
+    opacity: 0;
+    height: 0;
+    transition: var(--card_transition_duration);
+}
+
+.cardimg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--card_transition_duration);
+}
+
+.card > a {
+    display: contents;
+}
